@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "LeetCode Reminder",
+  "version": "1.0.0",
+  "description": "Add remind me button to LeetCode problems with email reminders",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "notifications"
+  ],
+  "host_permissions": [
+    "https://leetcode.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://leetcode.com/problems/*",
+        "https://leetcode.com/problems/*/description/*",
+        "https://leetcode.com/problems/*/submissions/*",
+        "https://leetcode.com/problems/*/discuss/*"
+      ],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "LeetCode Reminder"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["popup.html"],
+      "matches": ["https://leetcode.com/*"]
+    }
+  ]
+} 
