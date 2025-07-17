@@ -58,7 +58,7 @@ leetcodereminder2/
 2. Open Chrome and go to `chrome://extensions/`
 3. Enable "Developer mode" (top right toggle)
 4. Click "Load unpacked"
-5. Select the root project directory (`leetcodereminder2`)
+5. Select the root project directory (`leetcodereminder`)
 6. The extension should now appear in your extensions list
 
 ### 2. Test the Extension
