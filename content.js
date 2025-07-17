@@ -129,7 +129,7 @@
             }
 
             // Send to backend API
-            const response = await fetch('http://localhost:3001/api/reminders', {
+            const response = await fetch('https://leetcode-reminder-production.up.railway.app/api/reminders', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

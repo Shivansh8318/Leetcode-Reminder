@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             
             // Optional: Test backend connection
             try {
-                const response = await fetch('http://localhost:3001/api/test', {
+                const response = await fetch('https://leetcode-reminder-production.up.railway.app/api/test', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
