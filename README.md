@@ -253,7 +253,6 @@ Built with:
 - [Neon DB](https://neon.tech/) - PostgreSQL hosting
 - [Nodemailer](https://nodemailer.com/) - Email service
 - [node-cron](https://github.com/node-cron/node-cron) - Scheduling
-- [Chrome Extensions API](https://developer.chrome.com/docs/extensions/) - Browser extension platform
 
 ---
 
